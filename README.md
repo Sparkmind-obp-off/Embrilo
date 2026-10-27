@@ -31,3 +31,16 @@ Embrilo is an AI-assisted content production service with human quality control.
 ## Important status rule
 
 A document or specification is not an implemented feature. Do not claim the site is deployed, a payment is connected, an AI bridge is live, or tests have passed unless evidence confirms it. Keep credentials out of Git.
+
+
+## Working templates
+
+- [Customer Brief](templates/customer-brief.md)
+- [Delivery Manifest](templates/delivery-manifest.md)
+- [Short-Form Video Script Prompt](prompts/short-video-script.md)
+- [Product Story Pack Prompt](prompts/product-story-pack.md)
+- [Market Validation Research Plan](research/market-validation-plan.md)
+
+## Current implementation boundary
+
+This repository currently contains documentation and templates. It does not yet contain a verified deployed application, live Genspark API bridge, payment integration, or production database. Build and verify those in separate milestones.
