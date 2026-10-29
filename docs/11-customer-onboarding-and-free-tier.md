@@ -1,7 +1,8 @@
 # 11 — Customer Onboarding, Google Sign-In, and Free Generation
 
-**Status:** Development specification only; not proof of implementation or production readiness.
-**Priority:** P0. Development/preview first.
+**Status:** Specification only; not proof of implementation or production readiness.
+**Environment note (2026-10-30):** Owner reports selecting production/live for real Google access. OAuth and end-to-end readiness remain unverified.
+**Priority:** P0. Verify OAuth on the intended production origin with controlled test accounts; keep billable generation disabled until cost and safety gates pass.
 
 ## Product decision
 
