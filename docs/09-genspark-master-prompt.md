@@ -62,3 +62,8 @@ For software: build output, tests actually run, results, deployment evidence, se
 For content: alignment with the brief, factual support, audience fit, platform fit, rights/safety, format correctness, and human approval.
 
 End each run with: artifacts produced, file locations, tests or checks actually completed, unresolved blockers, and next action. Never label an unfinished or untested item complete.
+
+
+## Self-service implementation priority addendum (2026-10-29)
+
+Build and verify the development journey: visitor → short onboarding → Google OAuth → one-time free grant → supported generation → secure result. First identify the actual application source and deployed commit. Do not claim features exist from documentation or reported test counts alone. Verify provider access, cost and limitations; keep unverified modes disabled. Add idempotency, owner-only asset access, failure handling and hard cost limits. Use docs/11–15 as specifications and report artifact paths, tests actually run, evidence, blockers and next action.
