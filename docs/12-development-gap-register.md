@@ -9,7 +9,7 @@ Specified means written in docs. Reported means development notes say it exists.
 | ID | Area | Current evidence | Required action | Priority | Exit evidence |
 |---|---|---|---|---|---|
 | G-01 | Actual app source | Repository tree is documentation/templates focused | Identify the real app repository and deployed commit | P0 | Commit SHA and source paths |
-| G-02 | Google auth | Google/Clerk reported, not verified in this audit | Verify provider settings, redirects, state/nonce, sessions, preview/prod separation | P0 | New, returning, cancelled login tests |
+| G-02 | Google auth | Owner reports environment switched to production/live on 2026-10-30; actual platform, redirect configuration, and end-to-end sign-in remain unverified | Identify exact production origin/project and verify provider settings, redirects, state/nonce, sessions, and safe environment separation | P0 | New, returning, cancelled-login tests with commit/origin evidence |
 | G-03 | Customer journey | Original PRD centers on service brief intake | Implement visitor → onboarding → Google → grant → generator → result | P0 | End-to-end evidence |
 | G-04 | Free grant | Not in original service-oriented schema | Server-side idempotent grant and ledger | P0 | Repeat-login/concurrency tests |
 | G-05 | Generation adapter | Existing bridge explicitly manual/design-only | Verify provider access, limits, cost and real output; otherwise label fallback | P0 | Output and provider/cost evidence |
@@ -27,7 +27,7 @@ Specified means written in docs. Reported means development notes say it exists.
 ## Recommended order
 
 1. Identify actual app source and deployed commit.
-2. Verify Google OAuth/session behavior in development.
+2. Verify Google OAuth/session behavior on the intended production origin using controlled test accounts; keep billable generation disabled during auth-only tests.
 3. Implement onboarding and one-time server-side entitlement.
 4. Implement idempotent job lifecycle and provider adapter with cost controls.
 5. Verify real output and private asset access.
