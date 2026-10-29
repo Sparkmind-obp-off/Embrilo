@@ -90,3 +90,8 @@ Use direct, warm, confident Indonesian. Avoid inflated terms such as “revoluti
 ## Self-service journey addendum (2026-10-29)
 
 Add a distinct path: landing CTA “Coba gratis” → short onboarding with defaults/optional skips → Google sign-in → workspace with server-derived allowance → supported generator → progress/status → private result/download → history and honest next steps. Do not require a service brief for self-service users. Design OAuth cancellation, expired session, quota unavailable, loading, empty, provider failure and network failure states. Keep paid checkout inactive until verified. See docs/11-customer-onboarding-and-free-tier.md.
+
+
+## Self-service journey addendum (2026-10-29)
+
+Add a distinct path: landing CTA “Coba gratis” → short onboarding with defaults/optional skips → Google sign-in → workspace with server-derived allowance → supported generator → progress/status → private result/download → history and honest next steps. Do not require a service brief for self-service users. Design OAuth cancellation, expired session, quota unavailable, loading, empty, provider failure and network failure states. Keep paid checkout inactive until verified. See docs/11-customer-onboarding-and-free-tier.md.
