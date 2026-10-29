@@ -33,7 +33,16 @@
 
 ## Product definition
 
-Embrilo helps a customer turn a clear brief into content assets through AI-assisted drafting and production, followed by human review and delivery. The exact deliverable types and scope are selected per offer and must be stated before payment.
+Embrilo has two distinct paths: (1) self-service product journey: visitor → short onboarding → Google sign-in/sign-up → one-time free generation grant → supported generator → secure result; and (2) optional human-assisted content production with scoped briefs, human QC, and delivery. Do not force self-service users into a paid-service intake form.
+
+## Self-service MVP decisions (2026-10-29)
+
+- Google OAuth is the only signup UI for the initial self-service MVP; no separate email/password form. Google may return an email claim, which must be disclosed and minimized.
+- A newly eligible internal user receives one free generation grant, created server-side and idempotently.
+- Generation quota is controlled through a server-side ledger and job lifecycle; duplicate requests must not double-consume or double-generate.
+- Provider capability, access, output limits and cost must be verified before a generation mode is enabled.
+- Development/preview first. No production readiness claim without repeatable evidence.
+- Paid checkout, subscriptions, autonomous publishing and unverified API bridges remain disabled.
 
 ## Principles
 
@@ -54,7 +63,11 @@ Embrilo helps a customer turn a clear brief into content assets through AI-assis
 - Preferred Genspark features available in the owner's current plan.
 - Payment method and production payment verification.
 - Public contact method and customer support policy.
-- Whether the first web MVP needs authentication or can use a simple intake form.
+- Actual application repository and deployed commit to audit.
+- Verified Google OAuth/session configuration.
+- Supported generation provider, real capability, cost limits and fallback.
+- Entitlement ledger, generation-job lifecycle and private asset delivery implementation.
+- Privacy notice, retention/deletion policy and preview acceptance evidence.
 - Domain DNS records and hosting configuration.
 
 ## Change control
