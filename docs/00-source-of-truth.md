@@ -73,3 +73,11 @@ Embrilo has two distinct paths: (1) self-service product journey: visitor → sh
 ## Change control
 
 Any change to locked decisions must be recorded in this document with date, reason, impact, and owner approval. Never silently change the brand name, stack, budget principle, or production scope.
+
+## Production environment update (2026-10-30)
+
+- Owner reports that the environment selection was changed from “level 4” to production/live to make real Google access possible.
+- This is an owner-reported configuration change. The platform, project, exact deployed commit, redirect configuration, consent-screen state, and end-to-end sign-in result have not been independently verified in this repository audit.
+- Update the implementation state only after checking the actual environment and capturing repeatable evidence. Production environment selected ≠ Google OAuth verified ≠ complete product ready.
+- Use `docs/16-production-google-oauth-readiness.md` as the checklist for verifying the production Google sign-in flow.
+- Keep generation disabled if the provider, cost ceiling, private result delivery, and abuse controls are not verified.
