@@ -96,3 +96,23 @@ Do not publish this as a binding policy until the owner has reviewed and approve
 - [ ] Domain and HTTPS are verified.
 - [ ] Backup/export is tested if persistent data exists.
 - [ ] Production claims reflect observed evidence.
+
+## Self-service production readiness checklist (2026-10-30)
+
+The owner reports that the relevant environment was changed from “level 4” to production/live so Google access can be tested. Treat this as an environment-selection change, not proof that OAuth or the whole application is production-ready.
+
+- [ ] Record which platform/project/environment was changed and the exact deployed commit/build.
+- [ ] Confirm the production OAuth client belongs to the intended Google Cloud project.
+- [ ] Register the exact production origin and authorized redirect URI in the identity provider and auth framework; no wildcard redirects.
+- [ ] Confirm OAuth consent-screen audience, publishing/testing status, requested scopes, support contact, privacy policy, and any verification requirements.
+- [ ] Store client secrets only in the production secret manager; never commit them or paste them into logs.
+- [ ] Verify HTTPS, callback URL, state/nonce validation, issuer/audience validation, session cookie settings, and CSRF protections.
+- [ ] Test new-user sign-in, returning-user sign-in, cancellation, denied consent, invalid callback, expired session, and provider outage.
+- [ ] Confirm account provisioning uses the stable provider subject, not email alone; handle email changes safely.
+- [ ] Confirm one-time free grant is server-side, unique, and idempotent across duplicate callbacks/retries.
+- [ ] Verify logout, session expiry, account deletion/support process, and privacy disclosure for Google profile/email claims.
+- [ ] Check application logs for secrets, OAuth codes, access tokens, ID tokens, and unnecessary personal data; redact sensitive values.
+- [ ] Verify rate limits, abuse controls, security headers, error handling, and rollback plan.
+- [ ] Capture evidence for every test and label failures/unknowns honestly.
+
+Do not mark OAuth “live and working” until the complete callback/session flow passes on the actual production origin. Do not enable paid checkout or costly generation merely because production mode is selected. See `docs/16-production-google-oauth-readiness.md` and `docs/13-onboarding-acceptance-test-plan.md`.
