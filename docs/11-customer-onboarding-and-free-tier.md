@@ -95,3 +95,7 @@ Design loading, success, empty, validation error, OAuth cancellation, expired se
 ## Release gates
 
 Stay in development/preview until OAuth is verified, real provider generation is demonstrated end-to-end, cost limits and failure semantics pass, cross-account authorization passes, privacy/retention copy is approved, migrations and backup/restore are tested, and domain/HTTPS checks pass. Unit-test counts alone are insufficient.
+
+## Production environment note (2026-10-30)
+
+The owner reports switching the relevant environment from “level 4” to production/live to enable real Google access. The environment change itself does not prove that Google OAuth works end to end. Before relying on it, complete `docs/16-production-google-oauth-readiness.md` and record the exact origin, redirect URI, deployed commit, and test evidence. Keep the free-generation grant and provider execution disabled until server-side quota enforcement, provider access/cost, and private asset access are verified.
