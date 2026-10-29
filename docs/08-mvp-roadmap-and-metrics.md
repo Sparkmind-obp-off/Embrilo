@@ -94,6 +94,3 @@ Score each proposed feature 1–5 for:
 Build the highest-value, highest-confidence items with low cost first. Do not prioritize a feature just because it is technically exciting.
 
 
-## Self-service MVP roadmap addendum (2026-10-29)
-
-P0 order: (1) identify the actual app repository and deployed commit; (2) verify Google OAuth/session; (3) implement onboarding and one-time server-side entitlement; (4) implement idempotent generation jobs and private asset access; (5) verify provider output/cost and enforce a hard cap; (6) pass cross-account, concurrency, failure and abuse tests in preview. Do not enable production or paid checkout before P0 gates pass. Self-service North Star: Successful First Generations (SFG), distinct from Qualified Deliveries Accepted (QDA) for human-assisted service. See docs/12, docs/13, docs/14 and docs/15.
