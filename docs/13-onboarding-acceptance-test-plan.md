@@ -1,6 +1,6 @@
 # 13 — Onboarding and Free Generation Test Plan
 
-Use development/preview auth, synthetic users, non-sensitive prompts, and a provider mode with known cost. Do not run billable generation without an owner-approved cap. Never commit test credentials.
+Owner reports that production/live was selected to enable real Google access. Run OAuth callback/session tests on the intended production origin with controlled test accounts, and record the deployed commit and origin. Use synthetic users and non-sensitive prompts. Keep generation disabled for auth-only tests; only test real generation with a verified provider and an owner-approved hard cost cap. Never commit test credentials.
 
 | ID | Scenario | Expected result |
 |---|---|---|
@@ -31,4 +31,4 @@ Use development/preview auth, synthetic users, non-sensitive prompts, and a prov
 
 For every run record test ID, environment, app commit, date, expected/observed result, pass/fail and redacted evidence location. Do not alter expected results merely to make tests pass.
 
-All P0 tests must pass in preview. Cross-account access, double-spend, and uncontrolled-cost failures block release. Production is a separate decision after privacy, operations, rollback, and domain checks.
+All P0 tests must pass in the environment where the feature will be used. OAuth must be tested on the intended production origin if that is the configured Google OAuth origin. Cross-account access, double-spend, and uncontrolled-cost failures block release. A production origin does not by itself authorize public launch; privacy, operations, rollback, and domain checks still apply.
