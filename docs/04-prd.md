@@ -84,3 +84,10 @@ Enable a customer to understand Embrilo's offer, submit a usable brief, receive 
 ## Product decisions
 
 Use a public landing page plus a lightweight intake form first. If the owner can reliably manage the first projects with a private spreadsheet or structured project files, defer authentication and a database-backed dashboard. Add application complexity only when manual tracking becomes a demonstrated bottleneck.
+
+
+## Self-service MVP addendum (2026-10-29)
+
+The primary product journey is visitor → short onboarding → Google OAuth → one-time free generation → secure result. Keep human-assisted service intake separate.
+
+Must-have self-service requirements: Google-only signup UI; idempotent user provisioning; exactly one server-side grant per eligible internal account; atomic/idempotent job reservation; only verified and cost-capped generation modes; queued/processing/completed/failed job states; owner-only asset access; clear OAuth, quota, loading and failure states. See docs/11-customer-onboarding-and-free-tier.md and docs/13-onboarding-acceptance-test-plan.md.
