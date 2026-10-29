@@ -131,3 +131,8 @@ Enforce transitions in application logic. Never mark a payment verified solely b
 ## Self-service schema addendum (2026-10-29)
 
 The existing client/project schema does not cover the self-service free-generation journey. Add migrations for users (unique provider subject), onboarding_profiles, entitlements, append-only credit_ledger, generation_jobs (unique idempotency key), private assets, provider_usage, and safe audit events. Use foreign keys and indexes; never trust a client-supplied balance. Reserve a grant and create a job atomically or keep generation disabled until this guarantee is available. Detailed fields are in docs/11-customer-onboarding-and-free-tier.md.
+
+
+## Self-service schema addendum (2026-10-29)
+
+The existing client/project schema does not cover the self-service free-generation journey. Add migrations for users (unique provider subject), onboarding_profiles, entitlements, append-only credit_ledger, generation_jobs (unique idempotency key), private assets, provider_usage, and safe audit events. Use foreign keys and indexes; never trust a client-supplied balance. Reserve a grant and create a job atomically or keep generation disabled until this guarantee is available. Detailed fields are in docs/11-customer-onboarding-and-free-tier.md.
