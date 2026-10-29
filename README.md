@@ -40,6 +40,7 @@ A document or specification is not an implemented feature. Do not claim the site
 - [Onboarding Acceptance Test Plan](docs/13-onboarding-acceptance-test-plan.md)
 - [Free-Tier Cost Model](docs/14-free-tier-cost-model.md)
 - [Product Metrics and Events](docs/15-product-metrics-and-events.md)
+- [Production Google OAuth Readiness](docs/16-production-google-oauth-readiness.md)
 
 These are development specifications, not proof that features are implemented. Verify the actual application repository and deployed commit before making implementation claims.
 
