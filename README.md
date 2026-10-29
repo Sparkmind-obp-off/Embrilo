@@ -33,6 +33,16 @@ Embrilo is an AI-assisted content production service with human quality control.
 A document or specification is not an implemented feature. Do not claim the site is deployed, a payment is connected, an AI bridge is live, or tests have passed unless evidence confirms it. Keep credentials out of Git.
 
 
+## Self-service MVP specifications
+
+- [Customer Onboarding and Free Tier](docs/11-customer-onboarding-and-free-tier.md)
+- [Development Gap Register](docs/12-development-gap-register.md)
+- [Onboarding Acceptance Test Plan](docs/13-onboarding-acceptance-test-plan.md)
+- [Free-Tier Cost Model](docs/14-free-tier-cost-model.md)
+- [Product Metrics and Events](docs/15-product-metrics-and-events.md)
+
+These are development specifications, not proof that features are implemented. Verify the actual application repository and deployed commit before making implementation claims.
+
 ## Working templates
 
 - [Customer Brief](templates/customer-brief.md)
