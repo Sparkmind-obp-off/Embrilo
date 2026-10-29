@@ -89,3 +89,8 @@ Before claiming production:
 ## Self-service architecture addendum (2026-10-29)
 
 Required flow: landing/onboarding → Google OAuth/session → user provisioning and one-time grant → authenticated workspace → validated generation API → atomic entitlement reservation and job → verified provider adapter → private asset storage → owner-authorized result. Add endpoints for current user/entitlement, onboarding, generation submit/list/status, and secure asset retrieval only as needed by the existing stack. Provider access and cost must be verified; disable any mode with unknown access or unbounded cost. See docs/11-customer-onboarding-and-free-tier.md.
+
+
+## Self-service architecture addendum (2026-10-29)
+
+Required flow: landing/onboarding → Google OAuth/session → user provisioning and one-time grant → authenticated workspace → validated generation API → atomic entitlement reservation and job → verified provider adapter → private asset storage → owner-authorized result. Add endpoints for current user/entitlement, onboarding, generation submit/list/status, and secure asset retrieval only as needed by the existing stack. Provider access and cost must be verified; disable any mode with unknown access or unbounded cost. See docs/11-customer-onboarding-and-free-tier.md.
