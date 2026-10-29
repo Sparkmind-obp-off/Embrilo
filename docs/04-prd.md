@@ -91,3 +91,10 @@ Use a public landing page plus a lightweight intake form first. If the owner can
 The primary product journey is visitor → short onboarding → Google OAuth → one-time free generation → secure result. Keep human-assisted service intake separate.
 
 Must-have self-service requirements: Google-only signup UI; idempotent user provisioning; exactly one server-side grant per eligible internal account; atomic/idempotent job reservation; only verified and cost-capped generation modes; queued/processing/completed/failed job states; owner-only asset access; clear OAuth, quota, loading and failure states. See docs/11-customer-onboarding-and-free-tier.md and docs/13-onboarding-acceptance-test-plan.md.
+
+
+## Self-service MVP addendum (2026-10-29)
+
+The primary product journey is visitor → short onboarding → Google OAuth → one-time free generation → secure result. Keep human-assisted service intake separate.
+
+Must-have self-service requirements: Google-only signup UI; idempotent user provisioning; exactly one server-side grant per eligible internal account; atomic/idempotent job reservation; only verified and cost-capped generation modes; queued/processing/completed/failed job states; owner-only asset access; clear OAuth, quota, loading and failure states. See docs/11-customer-onboarding-and-free-tier.md and docs/13-onboarding-acceptance-test-plan.md.
